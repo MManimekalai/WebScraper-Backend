@@ -42,6 +42,9 @@ app.listen(PORT, () => {
     // Define an endpoint to clear the products collection
     app.post('/clear-products', clearProductsCollection);
 
+    app.get('/', (req, res) => {
+      res.send("WebScraper is working fine")
+    })
   
 })();
 
