@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from your local frontend
+  origin: 'https://mmurugesan-webscraper.netlify.app', // Allow requests from your local frontend
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   }));
 
