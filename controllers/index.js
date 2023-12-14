@@ -39,7 +39,7 @@ async function clearProductsCollection() {
     // Use deleteMany to remove all documents from the collection
     const deleteResult = await Product.deleteMany({});
     
-    //console.log(`Deleted ${deleteResult.deletedCount} documents from the products collection.`);
+    console.log(`Deleted ${deleteResult.deletedCount} documents from the products collection.`);
   } catch (error) {
     console.error('Error clearing products collection:', error);
   }
