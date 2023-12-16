@@ -3,7 +3,9 @@ const Product = require('../models/Product');
 const { connectDB } = require('../dbConfig');
 
 
+
 const getProducts = async (req, res) => {
+  
  await connectDB()
   try {
     // Fetch data from the database
